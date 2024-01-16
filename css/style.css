@@ -16,6 +16,7 @@
     --second-bg-color:#323946;
     --text-color:#fff;
     --main-color:#0ef;
+    --disabled:rgba(0,238,255,0.5);
 }
 
 html{
@@ -107,6 +108,31 @@ span{
 .home-content p{
     font-size: 1.6rem;
 }
+
+.project-btn{
+    /* display: inline-block; */
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+   
+    font-size: 1.6rem;
+    color:var(--second-bg-color);
+    letter-spacing: .1rem;
+    /* font-weight: 600; */
+    transition: .5s ease;
+    margin:5px;
+    }
+
+    .project-btn:hover{
+ box-shadow: 0 0 1rem var(--main-color);
+    }
+    
+    .project-wrap{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center; 
+    }
 
 .social-media a{
     display: inline-flex;
@@ -239,6 +265,11 @@ p i{
     overflow: hidden;
     display:flex;
 }
+
+.project-btn-disabled{
+    background: var(--disabled);
+}
+
 
 .projects-box img{
     width:100%;
@@ -398,4 +429,7 @@ p i{
         font-size:2rem;
         margin:3rem 0;
     }
+
+
+    
 }
